@@ -221,7 +221,7 @@ class TestEncodingDetector(object):
 
         # But if we run it through fix_embedded_windows_1252, it's fixed:
         fixed = UnicodeDammit.detwingle(doc)
-        assert "☃☃☃“Hi, I like Windows!”☃☃☃" == fixed.decode("utf8")
+        assert "“Hi, I like Windows!”" == fixed.decode("utf8")
 
     def test_detwingle_ignores_multibyte_characters(self):
         # Each of these characters has a UTF-8 representation ending

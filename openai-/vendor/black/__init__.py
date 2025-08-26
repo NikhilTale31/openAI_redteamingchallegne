@@ -602,7 +602,7 @@ def main(  # noqa: C901
                 for param, value in ctx.default_map.items():
                     out(f"{param}: {value}")
 
-    error_msg = "Oh no! 💥 💔 💥"
+    error_msg = "Oh no!   "
     if (
         required_version
         and required_version != __version__
@@ -685,7 +685,7 @@ def main(  # noqa: C901
 
         path_empty(
             sources,
-            "No Python files are present to be formatted. Nothing to do 😴",
+            "No Python files are present to be formatted. Nothing to do ",
             quiet,
             verbose,
             ctx,
@@ -718,7 +718,7 @@ def main(  # noqa: C901
     if verbose or not quiet:
         if code is None and (verbose or report.change_count or report.failure_count):
             out()
-        out(error_msg if report.return_code else "All done! ✨ 🍰 ✨")
+        out(error_msg if report.return_code else "All done!   ")
         if code is None:
             click.echo(str(report), err=True)
     ctx.exit(report.return_code)

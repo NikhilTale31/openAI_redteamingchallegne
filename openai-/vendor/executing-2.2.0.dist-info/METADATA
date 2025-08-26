@@ -163,7 +163,7 @@ The plan is to extend to more operations in the future.
 ### Projects I've contributed to
 
 - **[`IPython`](https://github.com/ipython/ipython/pull/12150)**: Highlights the executing node in tracebacks using `executing` via [`stack_data`](https://github.com/alexmojaki/stack_data).
-- **[`icecream`](https://github.com/gruns/icecream)**: 🍦 Sweet and creamy print debugging. Uses `executing` to identify where `ic` is called and print its arguments.
+- **[`icecream`](https://github.com/gruns/icecream)**:  Sweet and creamy print debugging. Uses `executing` to identify where `ic` is called and print its arguments.
 - **[`friendly_traceback`](https://github.com/friendly-traceback/friendly-traceback)**: Uses `stack_data` and `executing` to pinpoint the cause of errors and provide helpful explanations.
 - **[`python-devtools`](https://github.com/samuelcolvin/python-devtools)**: Uses `executing` for print debugging similar to `icecream`.
 - **[`sentry_sdk`](https://github.com/getsentry/sentry-python)**: Add the integration `sentry_sdk.integrations.executingExecutingIntegration()` to show the function `__qualname__` in each frame in sentry events.

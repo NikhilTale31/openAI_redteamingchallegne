@@ -940,7 +940,7 @@ def validate_attack_coverage() -> Dict[str, Any]:
 stats = validate_attack_coverage()
 assert stats["total_attacks"] >= 80, f"Expected 80+ scenarios, got {stats['total_attacks']}"
 assert stats["critical_severity"] >= 40, f"Expected 40+ CRITICAL attacks, got {stats['critical_severity']}"
-print(f"✓ Enhanced attack vectors loaded: {stats['total_attacks']} total attacks")
+print(f" Enhanced attack vectors loaded: {stats['total_attacks']} total attacks")
 print(f"  - CRITICAL (Level 10): {stats['critical_severity']}")
 print(f"  - HIGH (Level 7-8): {stats['high_severity']}")
 print(f"  - MEDIUM (Level 5-6): {stats['medium_severity']}")

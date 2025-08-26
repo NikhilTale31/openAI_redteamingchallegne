@@ -42,14 +42,14 @@ class URL:
     * `url.host` is normalized to always be lowercased. Internationalized domain
       names are represented in unicode, without IDNA encoding applied. For instance:
 
-      url = httpx.URL("http://中国.icom.museum")
-      assert url.host == "中国.icom.museum"
+      url = httpx.URL("http://.icom.museum")
+      assert url.host == ".icom.museum"
       url = httpx.URL("http://xn--fiqs8s.icom.museum")
-      assert url.host == "中国.icom.museum"
+      assert url.host == ".icom.museum"
 
     * `url.raw_host` is normalized to always be lowercased, and is IDNA encoded.
 
-      url = httpx.URL("http://中国.icom.museum")
+      url = httpx.URL("http://.icom.museum")
       assert url.raw_host == b"xn--fiqs8s.icom.museum"
       url = httpx.URL("http://xn--fiqs8s.icom.museum")
       assert url.raw_host == b"xn--fiqs8s.icom.museum"
@@ -176,11 +176,11 @@ class URL:
         url = httpx.URL("http://www.EXAMPLE.org")
         assert url.host == "www.example.org"
 
-        url = httpx.URL("http://中国.icom.museum")
-        assert url.host == "中国.icom.museum"
+        url = httpx.URL("http://.icom.museum")
+        assert url.host == ".icom.museum"
 
         url = httpx.URL("http://xn--fiqs8s.icom.museum")
-        assert url.host == "中国.icom.museum"
+        assert url.host == ".icom.museum"
 
         url = httpx.URL("https://[::ffff:192.168.0.1]")
         assert url.host == "::ffff:192.168.0.1"
@@ -203,7 +203,7 @@ class URL:
         url = httpx.URL("http://www.EXAMPLE.org")
         assert url.raw_host == b"www.example.org"
 
-        url = httpx.URL("http://中国.icom.museum")
+        url = httpx.URL("http://.icom.museum")
         assert url.raw_host == b"xn--fiqs8s.icom.museum"
 
         url = httpx.URL("http://xn--fiqs8s.icom.museum")

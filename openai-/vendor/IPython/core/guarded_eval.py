@@ -166,7 +166,7 @@ def _has_original_dunder(
     # we only need to check at class level
     value_type = type(value)
 
-    # strict type check passes → no need to check method
+    # strict type check passes  no need to check method
     if value_type in allowed_types:
         return True
 

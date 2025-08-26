@@ -728,42 +728,42 @@ class GreekLocale(Locale):
 class JapaneseLocale(Locale):
     names = ["ja", "ja-jp"]
 
-    past = "{0}前"
-    future = "{0}後"
+    past = "{0}"
+    future = "{0}"
     and_word = ""
 
     timeframes = {
-        "now": "現在",
-        "second": "1秒",
-        "seconds": "{0}秒",
-        "minute": "1分",
-        "minutes": "{0}分",
-        "hour": "1時間",
-        "hours": "{0}時間",
-        "day": "1日",
-        "days": "{0}日",
-        "week": "1週間",
-        "weeks": "{0}週間",
-        "month": "1ヶ月",
-        "months": "{0}ヶ月",
-        "year": "1年",
-        "years": "{0}年",
+        "now": "",
+        "second": "1",
+        "seconds": "{0}",
+        "minute": "1",
+        "minutes": "{0}",
+        "hour": "1",
+        "hours": "{0}",
+        "day": "1",
+        "days": "{0}",
+        "week": "1",
+        "weeks": "{0}",
+        "month": "1",
+        "months": "{0}",
+        "year": "1",
+        "years": "{0}",
     }
 
     month_names = [
         "",
-        "1月",
-        "2月",
-        "3月",
-        "4月",
-        "5月",
-        "6月",
-        "7月",
-        "8月",
-        "9月",
-        "10月",
-        "11月",
-        "12月",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
     ]
     month_abbreviations = [
         "",
@@ -781,8 +781,8 @@ class JapaneseLocale(Locale):
         "12",
     ]
 
-    day_names = ["", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"]
-    day_abbreviations = ["", "月", "火", "水", "木", "金", "土", "日"]
+    day_names = ["", "", "", "", "", "", "", ""]
+    day_abbreviations = ["", "", "", "", "", "", "", ""]
 
 
 class SwedishLocale(Locale):
@@ -945,41 +945,41 @@ class FinnishLocale(Locale):
 class ChineseCNLocale(Locale):
     names = ["zh", "zh-cn"]
 
-    past = "{0}前"
-    future = "{0}后"
+    past = "{0}"
+    future = "{0}"
 
     timeframes = {
-        "now": "刚才",
-        "second": "1秒",
-        "seconds": "{0}秒",
-        "minute": "1分钟",
-        "minutes": "{0}分钟",
-        "hour": "1小时",
-        "hours": "{0}小时",
-        "day": "1天",
-        "days": "{0}天",
-        "week": "1周",
-        "weeks": "{0}周",
-        "month": "1个月",
-        "months": "{0}个月",
-        "year": "1年",
-        "years": "{0}年",
+        "now": "",
+        "second": "1",
+        "seconds": "{0}",
+        "minute": "1",
+        "minutes": "{0}",
+        "hour": "1",
+        "hours": "{0}",
+        "day": "1",
+        "days": "{0}",
+        "week": "1",
+        "weeks": "{0}",
+        "month": "1",
+        "months": "{0}",
+        "year": "1",
+        "years": "{0}",
     }
 
     month_names = [
         "",
-        "一月",
-        "二月",
-        "三月",
-        "四月",
-        "五月",
-        "六月",
-        "七月",
-        "八月",
-        "九月",
-        "十月",
-        "十一月",
-        "十二月",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
     ]
     month_abbreviations = [
         "",
@@ -997,49 +997,49 @@ class ChineseCNLocale(Locale):
         "12",
     ]
 
-    day_names = ["", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
-    day_abbreviations = ["", "一", "二", "三", "四", "五", "六", "日"]
+    day_names = ["", "", "", "", "", "", "", ""]
+    day_abbreviations = ["", "", "", "", "", "", "", ""]
 
 
 class ChineseTWLocale(Locale):
     names = ["zh-tw"]
 
-    past = "{0}前"
-    future = "{0}後"
-    and_word = "和"
+    past = "{0}"
+    future = "{0}"
+    and_word = ""
 
     timeframes = {
-        "now": "剛才",
-        "second": "1秒",
-        "seconds": "{0}秒",
-        "minute": "1分鐘",
-        "minutes": "{0}分鐘",
-        "hour": "1小時",
-        "hours": "{0}小時",
-        "day": "1天",
-        "days": "{0}天",
-        "week": "1週",
-        "weeks": "{0}週",
-        "month": "1個月",
-        "months": "{0}個月",
-        "year": "1年",
-        "years": "{0}年",
+        "now": "",
+        "second": "1",
+        "seconds": "{0}",
+        "minute": "1",
+        "minutes": "{0}",
+        "hour": "1",
+        "hours": "{0}",
+        "day": "1",
+        "days": "{0}",
+        "week": "1",
+        "weeks": "{0}",
+        "month": "1",
+        "months": "{0}",
+        "year": "1",
+        "years": "{0}",
     }
 
     month_names = [
         "",
-        "1月",
-        "2月",
-        "3月",
-        "4月",
-        "5月",
-        "6月",
-        "7月",
-        "8月",
-        "9月",
-        "10月",
-        "11月",
-        "12月",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
     ]
     month_abbreviations = [
         "",
@@ -1057,48 +1057,48 @@ class ChineseTWLocale(Locale):
         "12",
     ]
 
-    day_names = ["", "週一", "週二", "週三", "週四", "週五", "週六", "週日"]
-    day_abbreviations = ["", "一", "二", "三", "四", "五", "六", "日"]
+    day_names = ["", "", "", "", "", "", "", ""]
+    day_abbreviations = ["", "", "", "", "", "", "", ""]
 
 
 class HongKongLocale(Locale):
     names = ["zh-hk"]
 
-    past = "{0}前"
-    future = "{0}後"
+    past = "{0}"
+    future = "{0}"
 
     timeframes = {
-        "now": "剛才",
-        "second": "1秒",
-        "seconds": "{0}秒",
-        "minute": "1分鐘",
-        "minutes": "{0}分鐘",
-        "hour": "1小時",
-        "hours": "{0}小時",
-        "day": "1天",
-        "days": "{0}天",
-        "week": "1星期",
-        "weeks": "{0}星期",
-        "month": "1個月",
-        "months": "{0}個月",
-        "year": "1年",
-        "years": "{0}年",
+        "now": "",
+        "second": "1",
+        "seconds": "{0}",
+        "minute": "1",
+        "minutes": "{0}",
+        "hour": "1",
+        "hours": "{0}",
+        "day": "1",
+        "days": "{0}",
+        "week": "1",
+        "weeks": "{0}",
+        "month": "1",
+        "months": "{0}",
+        "year": "1",
+        "years": "{0}",
     }
 
     month_names = [
         "",
-        "1月",
-        "2月",
-        "3月",
-        "4月",
-        "5月",
-        "6月",
-        "7月",
-        "8月",
-        "9月",
-        "10月",
-        "11月",
-        "12月",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
     ]
     month_abbreviations = [
         "",
@@ -1116,60 +1116,60 @@ class HongKongLocale(Locale):
         "12",
     ]
 
-    day_names = ["", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
-    day_abbreviations = ["", "一", "二", "三", "四", "五", "六", "日"]
+    day_names = ["", "", "", "", "", "", "", ""]
+    day_abbreviations = ["", "", "", "", "", "", "", ""]
 
 
 class KoreanLocale(Locale):
     names = ["ko", "ko-kr"]
 
-    past = "{0} 전"
-    future = "{0} 후"
+    past = "{0} "
+    future = "{0} "
 
     timeframes = {
-        "now": "지금",
-        "second": "1초",
-        "seconds": "{0}초",
-        "minute": "1분",
-        "minutes": "{0}분",
-        "hour": "한시간",
-        "hours": "{0}시간",
-        "day": "하루",
-        "days": "{0}일",
-        "week": "1주",
-        "weeks": "{0}주",
-        "month": "한달",
-        "months": "{0}개월",
-        "year": "1년",
-        "years": "{0}년",
+        "now": "",
+        "second": "1",
+        "seconds": "{0}",
+        "minute": "1",
+        "minutes": "{0}",
+        "hour": "",
+        "hours": "{0}",
+        "day": "",
+        "days": "{0}",
+        "week": "1",
+        "weeks": "{0}",
+        "month": "",
+        "months": "{0}",
+        "year": "1",
+        "years": "{0}",
     }
 
     special_dayframes = {
-        -3: "그끄제",
-        -2: "그제",
-        -1: "어제",
-        1: "내일",
-        2: "모레",
-        3: "글피",
-        4: "그글피",
+        -3: "",
+        -2: "",
+        -1: "",
+        1: "",
+        2: "",
+        3: "",
+        4: "",
     }
 
-    special_yearframes = {-2: "제작년", -1: "작년", 1: "내년", 2: "내후년"}
+    special_yearframes = {-2: "", -1: "", 1: "", 2: ""}
 
     month_names = [
         "",
-        "1월",
-        "2월",
-        "3월",
-        "4월",
-        "5월",
-        "6월",
-        "7월",
-        "8월",
-        "9월",
-        "10월",
-        "11월",
-        "12월",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
     ]
     month_abbreviations = [
         "",
@@ -1187,14 +1187,14 @@ class KoreanLocale(Locale):
         "12",
     ]
 
-    day_names = ["", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
-    day_abbreviations = ["", "월", "화", "수", "목", "금", "토", "일"]
+    day_names = ["", "", "", "", "", "", "", ""]
+    day_abbreviations = ["", "", "", "", "", "", "", ""]
 
     def _ordinal_number(self, n: int) -> str:
-        ordinals = ["0", "첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"]
+        ordinals = ["0", "", "", "", "", "", "", "", "", "", ""]
         if n < len(ordinals):
-            return f"{ordinals[n]}번째"
-        return f"{n}번째"
+            return f"{ordinals[n]}"
+        return f"{n}"
 
     def _format_relative(
         self,
@@ -2943,7 +2943,7 @@ class MalayalamLocale(Locale):
         "മാർച്ച്‌",
         "ഏപ്രിൽ ",
         "മെയ്‌ ",
-        "ജൂണ്‍",
+        "ജൂണ്",
         "ജൂലൈ",
         "ഓഗസ്റ്റ്‌",
         "സെപ്റ്റംബർ",
@@ -2958,7 +2958,7 @@ class MalayalamLocale(Locale):
         "മാർ",
         "ഏപ്രിൽ",
         "മേയ്",
-        "ജൂണ്‍",
+        "ജൂണ്",
         "ജൂലൈ",
         "ഓഗസ്റ",
         "സെപ്റ്റ",
@@ -2967,16 +2967,16 @@ class MalayalamLocale(Locale):
         "ഡിസം",
     ]
 
-    day_names = ["", "തിങ്കള്‍", "ചൊവ്വ", "ബുധന്‍", "വ്യാഴം", "വെള്ളി", "ശനി", "ഞായര്‍"]
+    day_names = ["", "തിങ്കള്", "ചൊവ്വ", "ബുധന്", "വ്യാഴം", "വെള്ളി", "ശനി", "ഞായര്"]
     day_abbreviations = [
         "",
-        "തിങ്കള്‍",
+        "തിങ്കള്",
         "ചൊവ്വ",
-        "ബുധന്‍",
+        "ബുധന്",
         "വ്യാഴം",
         "വെള്ളി",
         "ശനി",
-        "ഞായര്‍",
+        "ഞായര്",
     ]
 
 
@@ -5963,7 +5963,7 @@ class SinhalaLocale(Locale):
         "ජනවාරි",
         "පෙබරවාරි",
         "මාර්තු",
-        "අප්‍රේල්",
+        "අප්රේල්",
         "මැයි",
         "ජූනි",
         "ජූලි",
@@ -5979,7 +5979,7 @@ class SinhalaLocale(Locale):
         "ජන",
         "පෙබ",
         "මාර්",
-        "අප්‍රේ",
+        "අප්රේ",
         "මැයි",
         "ජුනි",
         "ජූලි",
@@ -5995,7 +5995,7 @@ class SinhalaLocale(Locale):
         "සදුදා",
         "අඟහරැවදා",
         "බදාදා",
-        "බ්‍රහස්‍පතින්‍දා",
+        "බ්රහස්පතින්දා",
         "සිකුරාදා",
         "සෙනසුරාදා",
         "ඉරිදා",

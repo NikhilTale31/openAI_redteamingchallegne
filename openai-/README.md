@@ -1,42 +1,42 @@
 # GPT-OSS-20B Vulnerability Testing Suite
 
-## 🎯 Overview
+##  Overview
 
 This repository contains a comprehensive vulnerability testing framework designed for the OpenAI GPT-OSS-20B Red-Teaming Competition. The suite includes multiple specialized testing modules, each targeting different vulnerability categories with state-of-the-art prompting techniques.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 openai-/
-├── src/
-│   ├── vulnerability_testers/       # Core vulnerability testing modules
-│   │   ├── __init__.py              # Module initialization and exports
-│   │   ├── extreme_vulnerability_exploiter.py    # JSON-reporting exploiter with 100+ prompts
-│   │   ├── hackathon_vulnerability_enhanced.py   # Competition-optimized tester
-│   │   ├── nuclear_vulnerability_tester.py       # Nuclear-level critical testing
-│   │   └── ultimate_vulnerability_finder.py      # State-of-the-art finder
-│   │
-│   ├── prompts/                     # Prompt collections (if separated)
-│   └── utils/                       # Utility functions
-│
-├── scripts/
-│   └── model_loader.py              # GPT-OSS-20B model loading script
-│
-├── main findings/                   # Competition findings and analysis
-│   ├── vulnerability_findings/      # Individual vulnerability reports
-│   ├── hackathon_findings/         # Hackathon-specific findings
-│   └── kaggle_submission/          # Kaggle submission materials
-│
-├── data/
-│   ├── prompts/                    # Prompt datasets
-│   └── reference/                  # Reference materials
-│
-├── COMPETITION_WRITEUP.md          # Original competition submission
-├── PROFESSIONAL_COMPETITION_WRITEUP.md  # Professional formatted version
-└── README.md                        # This file
+ src/
+    vulnerability_testers/       # Core vulnerability testing modules
+       __init__.py              # Module initialization and exports
+       extreme_vulnerability_exploiter.py    # JSON-reporting exploiter with 100+ prompts
+       hackathon_vulnerability_enhanced.py   # Competition-optimized tester
+       nuclear_vulnerability_tester.py       # Nuclear-level critical testing
+       ultimate_vulnerability_finder.py      # State-of-the-art finder
+   
+    prompts/                     # Prompt collections (if separated)
+    utils/                       # Utility functions
+
+ scripts/
+    model_loader.py              # GPT-OSS-20B model loading script
+
+ main findings/                   # Competition findings and analysis
+    vulnerability_findings/      # Individual vulnerability reports
+    hackathon_findings/         # Hackathon-specific findings
+    kaggle_submission/          # Kaggle submission materials
+
+ data/
+    prompts/                    # Prompt datasets
+    reference/                  # Reference materials
+
+ COMPETITION_WRITEUP.md          # Original competition submission
+ PROFESSIONAL_COMPETITION_WRITEUP.md  # Professional formatted version
+ README.md                        # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -77,7 +77,7 @@ nuclear_tester = NuclearVulnerabilityTester(pipe)
 results = nuclear_tester.run_nuclear_test()
 ```
 
-## 🔬 Testing Modules
+##  Testing Modules
 
 ### 1. Extreme Vulnerability Exploiter
 - **File**: `extreme_vulnerability_exploiter.py`
@@ -108,7 +108,7 @@ results = nuclear_tester.run_nuclear_test()
   - Maximum token generation
   - Comprehensive vulnerability analysis
 
-## 📊 Vulnerability Categories
+##  Vulnerability Categories
 
 Each module tests for the following vulnerability types:
 
@@ -123,7 +123,7 @@ Each module tests for the following vulnerability types:
 9. **Evaluation Awareness** - Test detection and gaming
 10. **Chain of Thought Issues** - Hidden reasoning and thought manipulation
 
-## 📈 Scoring System
+##  Scoring System
 
 Each finding is evaluated on five dimensions:
 - **Severity of Harm** (0-10)
@@ -138,7 +138,7 @@ Overall scores:
 - **5-6.9**: MEDIUM vulnerability
 - **Below 5**: LOW vulnerability
 
-## 🏆 Competition Results
+##  Competition Results
 
 The testing suite achieved remarkable results in the competition:
 - **Average Score**: 49.8/50 (99.6%)
@@ -152,7 +152,7 @@ Key discoveries include:
 4. Authority-based security bypass
 5. Systematic capability concealment
 
-## 📝 Output Format
+##  Output Format
 
 All findings are saved in JSON format with the following structure:
 
@@ -178,7 +178,7 @@ All findings are saved in JSON format with the following structure:
 }
 ```
 
-## ⚠️ Ethical Considerations
+##  Ethical Considerations
 
 This testing suite is designed for:
 - Legitimate security research
@@ -192,7 +192,7 @@ This testing suite is designed for:
 - Creating real harmful content
 - Violating terms of service
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please ensure:
 1. All prompts are for research purposes only
@@ -200,11 +200,11 @@ Contributions are welcome! Please ensure:
 3. Documentation is comprehensive
 4. Ethical guidelines are maintained
 
-## 📄 License
+##  License
 
 This project is for research and competition purposes. Use responsibly and ethically.
 
-## 📞 Contact
+##  Contact
 
 For questions about the competition submission or collaboration:
 - See PROFESSIONAL_COMPETITION_WRITEUP.md for details

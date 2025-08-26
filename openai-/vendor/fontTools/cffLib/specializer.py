@@ -41,7 +41,7 @@ def programToCommands(program, getNumRegions=None):
     Each command is a two-tuple of commandname,arg-list.  The commandname might
     be empty string if no commandname shall be emitted (used for glyph width,
     hintmask/cntrmask argument, as well as stray arguments at the end of the
-    program (🤷).
+    program ().
     'getNumRegions' may be None, or a callable object. It must return the
     number of regions. 'getNumRegions' takes a single argument, vsindex. It
     returns the numRegions for the vsindex.

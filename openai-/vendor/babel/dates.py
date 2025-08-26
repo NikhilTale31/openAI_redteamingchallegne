@@ -1578,9 +1578,9 @@ class DateTimeFormat:
 
         >>> format = DateTimeFormat(datetime(2022, 4, 28, 6, 27), 'zh_Hant')
         >>> format.format_period('a', 1)
-        u'上午'
+        u''
         >>> format.format_period('B', 1)
-        u'清晨'
+        u''
 
         :param char: pattern format character ('a', 'b', 'B')
         :param num: count of format character

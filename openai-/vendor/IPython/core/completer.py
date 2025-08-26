@@ -1660,7 +1660,7 @@ def back_unicode_name_matcher(context: CompletionContext):
 def back_unicode_name_matches(text: str) -> tuple[str, Sequence[str]]:
     """Match Unicode characters back to Unicode name
 
-    This does  ``☃`` -> ``\\snowman``
+    This does  ```` -> ``\\snowman``
 
     Note that snowman is not a valid python3 combining character but will be expanded.
     Though it will not recombine back to the snowman character by the completion machinery.
@@ -2452,7 +2452,7 @@ class IPCompleter(Completer):
         """
         Determine whether the cursor is in an attribute or global completion context.
         """
-        # Cursor in string/comment → GLOBAL.
+        # Cursor in string/comment  GLOBAL.
         is_string, is_in_expression = self._is_in_string_or_comment(line)
         if is_string and not is_in_expression:
             return self._CompletionContextType.GLOBAL

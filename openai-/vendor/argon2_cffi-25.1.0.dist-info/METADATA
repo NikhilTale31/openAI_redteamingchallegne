@@ -87,7 +87,7 @@ argon2.exceptions.VerifyMismatchError: The password does not match the supplied 
 
 ---
 
-[Full Changelog →](https://github.com/hynek/argon2-cffi/blob/main/CHANGELOG.md)
+[Full Changelog ](https://github.com/hynek/argon2-cffi/blob/main/CHANGELOG.md)
 
 
 ## Credits

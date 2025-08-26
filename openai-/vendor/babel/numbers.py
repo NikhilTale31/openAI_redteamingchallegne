@@ -603,7 +603,7 @@ def format_compact_decimal(
     >>> format_compact_decimal(12345, format_type="short", locale='en_US', fraction_digits=2)
     u'12.34K'
     >>> format_compact_decimal(1234567, format_type="short", locale="ja_JP")
-    u'123万'
+    u'123'
     >>> format_compact_decimal(2345678, format_type="long", locale="mk")
     u'2 милиони'
     >>> format_compact_decimal(21000000, format_type="long", locale="mk")

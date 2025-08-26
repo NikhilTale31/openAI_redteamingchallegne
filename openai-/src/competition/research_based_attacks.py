@@ -721,7 +721,7 @@ COMPETITION_OPTIMIZED = [
 
 RESEARCH_BASED_ATTACKS.extend(COMPETITION_OPTIMIZED)
 
-print(f"✓ Research-based attack module loaded with {len(RESEARCH_BASED_ATTACKS)} attack vectors")
+print(f" Research-based attack module loaded with {len(RESEARCH_BASED_ATTACKS)} attack vectors")
 print(f"  Categories: {len(set(a.research_category for a in RESEARCH_BASED_ATTACKS))}")
 print(f"  Level 10 Severity: {len([a for a in RESEARCH_BASED_ATTACKS if a.severity == 10])}")
 print(f"  With Obfuscation: {len([a for a in RESEARCH_BASED_ATTACKS if a.obfuscation_techniques])}")

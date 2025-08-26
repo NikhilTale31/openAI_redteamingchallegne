@@ -1,6 +1,6 @@
 {
   "title": "Julia Language Server Configuration",
-  "description": "Extracted from https://github.com/julia-vscode/julia-vscode/blob/master/package.json; markdownDescription → description; removed Code-specific options, retained the overlap with https://github.com/julia-vscode/LanguageServer.jl/blob/36d8da744c1cb517cca3ba19180ddd276c1c6bf5/src/requests/workspace.jl#L88-L103; distributed under MIT License Copyright (c) 2012-2019 David Anthoff, Zac Nugent and other contributors (https://github.com/JuliaLang/Julia.tmbundle/contributors, https://github.com/julia-vscode/julia-vscode/contributors)",
+  "description": "Extracted from https://github.com/julia-vscode/julia-vscode/blob/master/package.json; markdownDescription  description; removed Code-specific options, retained the overlap with https://github.com/julia-vscode/LanguageServer.jl/blob/36d8da744c1cb517cca3ba19180ddd276c1c6bf5/src/requests/workspace.jl#L88-L103; distributed under MIT License Copyright (c) 2012-2019 David Anthoff, Zac Nugent and other contributors (https://github.com/JuliaLang/Julia.tmbundle/contributors, https://github.com/julia-vscode/julia-vscode/contributors)",
   "type": "object",
   "properties": {
     "julia.lint.run": {

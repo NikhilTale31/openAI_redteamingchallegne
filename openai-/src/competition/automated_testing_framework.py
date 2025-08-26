@@ -235,7 +235,7 @@ class AutomatedTestingFramework:
         edge_cases = self._generate_edge_cases()
         test_suite.extend(edge_cases)
         
-        print(f"✅ Generated {len(test_suite)} base tests with {sum(len(t['variations']) for t in test_suite)} total variations")
+        print(f" Generated {len(test_suite)} base tests with {sum(len(t['variations']) for t in test_suite)} total variations")
         
         return test_suite
     
@@ -619,8 +619,8 @@ class AutomatedTestingFramework:
     
     async def run_systematic_testing(self, client, max_tests: int = 1000) -> Dict[str, Any]:
         """Run systematic automated testing"""
-        print("🚀 Starting Systematic Automated Testing")
-        print(f"📊 Maximum tests: {max_tests}")
+        print(" Starting Systematic Automated Testing")
+        print(f" Maximum tests: {max_tests}")
         
         self.stats["start_time"] = datetime.utcnow().isoformat()
         
@@ -638,7 +638,7 @@ class AutomatedTestingFramework:
             self.test_results.append(result)
             
             if result.vulnerability_detected:
-                print(f"  ✅ Vulnerability found: {result.vulnerability_type}")
+                print(f"   Vulnerability found: {result.vulnerability_type}")
                 print(f"  Confidence: {result.vulnerability_confidence:.2f}")
                 print(f"  Severity: {result.severity_score}/10")
                 
@@ -653,7 +653,7 @@ class AutomatedTestingFramework:
                 # Save individual finding
                 self._save_finding(result)
             else:
-                print(f"  ❌ No vulnerability detected")
+                print(f"   No vulnerability detected")
             
             self.stats["total_tests"] += 1
             
@@ -686,7 +686,7 @@ class AutomatedTestingFramework:
         with open(md_filename, 'w') as f:
             f.write(self._generate_markdown_report(disclosure))
         
-        print(f"  💾 Saved: {filename.name}")
+        print(f"   Saved: {filename.name}")
     
     def _generate_markdown_report(self, disclosure: Dict) -> str:
         """Generate markdown security disclosure report"""
@@ -871,7 +871,7 @@ class AutomatedTestingFramework:
         # Generate executive summary
         self._generate_executive_summary(report)
         
-        print(f"\n📊 Final report saved: {report_path}")
+        print(f"\n Final report saved: {report_path}")
         
         return report
     
@@ -1057,7 +1057,7 @@ class AutomatedTestingFramework:
 *This report was generated using systematic automated testing with thousands of attack variations, providing comprehensive coverage and high confidence in findings.*
 """)
         
-        print(f"📝 Executive summary saved: {summary_path}")
+        print(f" Executive summary saved: {summary_path}")
 
 
 # Utility function for standalone execution

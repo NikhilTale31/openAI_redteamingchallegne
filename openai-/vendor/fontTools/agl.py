@@ -11,7 +11,7 @@ to their Unicode equivalents. Example usage:
 
 	>>> from fontTools.agl import toUnicode
 	>>> toUnicode("nahiragana")
-	'な'
+	''
 
 It also contains two dictionaries, ``UV2AGL`` and ``AGL2UV``, which map from
 Unicode codepoints to AGL names and vice versa:
@@ -5176,10 +5176,10 @@ def _glyphComponentToUnicode(component, isZapfDingbats):
 
 # https://github.com/adobe-type-tools/agl-aglfn/blob/master/zapfdingbats.txt
 _AGL_ZAPF_DINGBATS = (
-    " ✁✂✄☎✆✝✞✟✠✡☛☞✌✍✎✏✑✒✓✔✕✖✗✘✙✚✛✜✢✣✤✥✦✧★✩✪✫✬✭✮✯✰✱✲✳✴✵✶✷✸✹✺✻✼✽✾✿❀"
-    "❁❂❃❄❅❆❇❈❉❊❋●❍■❏❑▲▼◆❖ ◗❘❙❚❯❱❲❳❨❩❬❭❪❫❴❵❛❜❝❞❡❢❣❤✐❥❦❧♠♥♦♣    ✉✈✇"
-    "①②③④⑤⑥⑦⑧⑨⑩❶❷❸❹❺❻❼❽❾❿➀➁➂➃➄➅➆➇➈➉➊➋➌➍➎➏➐➑➒➓➔→➣↔"
-    "↕➙➛➜➝➞➟➠➡➢➤➥➦➧➨➩➫➭➯➲➳➵➸➺➻➼➽➾➚➪➶➹➘➴➷➬➮➱✃❐❒❮❰"
+    " "
+    "     "
+    ""
+    ""
 )
 
 

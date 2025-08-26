@@ -44,7 +44,7 @@ _tips: Any = {
         # cranking for a few mad weeks on what became the IPython 0.2.0 that I
         # posted about in that comp.lang.python thread of December 2001.
         # [2/8/25, 23:33:52] Fernando Perez: That period from Oct 11 to Dec 9
-        # 2001 was maniacal coding, with very little sleep 🙂
+        # 2001 was maniacal coding, with very little sleep 
         (
             10,
             11,

@@ -57,10 +57,10 @@ Basic functions are simply executed:
 .. code-block:: pycon
 
     >>> import idna
-    >>> idna.encode('ドメイン.テスト')
+    >>> idna.encode('.')
     b'xn--eckwd4c7c.xn--zckzah'
     >>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))
-    ドメイン.テスト
+    .
 
 
 Installation
@@ -83,10 +83,10 @@ respectively.
 .. code-block:: pycon
 
     >>> import idna
-    >>> idna.encode('ドメイン.テスト')
+    >>> idna.encode('.')
     b'xn--eckwd4c7c.xn--zckzah'
     >>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))
-    ドメイン.テスト
+    .
 
 You may use the codec encoding and decoding methods using the
 ``idna.codec`` module:
@@ -104,7 +104,7 @@ Conversions can be applied at a per-label basis using the ``ulabel`` or
 
 .. code-block:: pycon
 
-    >>> idna.alabel('测试')
+    >>> idna.alabel('')
     b'xn--0zwm56d'
 
 Compatibility Mapping (UTS #46)

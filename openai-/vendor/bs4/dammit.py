@@ -132,13 +132,13 @@ class EntitySubstitution(object):
 
         This function sets the following class variables:
 
-        CHARACTER_TO_HTML_ENTITY - A mapping of Unicode strings like "⦨" to
+        CHARACTER_TO_HTML_ENTITY - A mapping of Unicode strings like "" to
         entity names like "angmsdaa". When a single Unicode string has
         multiple entity names, we try to choose the most commonly-used
         name.
 
         HTML_ENTITY_TO_CHARACTER: A mapping of entity names like "angmsdaa" to
-        Unicode strings like "⦨".
+        Unicode strings like "".
 
         CHARACTER_TO_HTML_ENTITY_RE: A regular expression matching (almost) any
         Unicode string that corresponds to an HTML5 named entity.

@@ -668,7 +668,7 @@ def calcCodePageRanges(unicodes):
     """
     bits = set()
     hasAscii = set(range(0x20, 0x7E)).issubset(unicodes)
-    hasLineart = ord("┤") in unicodes
+    hasLineart = ord("") in unicodes
 
     for uni in unicodes:
         if uni == ord("Þ") and hasAscii:
@@ -681,7 +681,7 @@ def calcCodePageRanges(unicodes):
             bits.add(2)  # Cyrillic
             if ord("Ѕ") in unicodes and hasLineart:
                 bits.add(57)  # IBM Cyrillic
-            if ord("╜") in unicodes and hasLineart:
+            if ord("") in unicodes and hasLineart:
                 bits.add(49)  # MS-DOS Russian
         elif uni == ord("Ά"):
             bits.add(3)  # Greek
@@ -711,17 +711,17 @@ def calcCodePageRanges(unicodes):
             bits.add(8)  # Vietnamese
         elif uni == ord("ๅ"):
             bits.add(16)  # Thai
-        elif uni == ord("エ"):
+        elif uni == ord(""):
             bits.add(17)  # JIS/Japan
-        elif uni == ord("ㄅ"):
+        elif uni == ord(""):
             bits.add(18)  # Chinese: Simplified
-        elif uni == ord("ㄱ"):
+        elif uni == ord(""):
             bits.add(19)  # Korean wansung
-        elif uni == ord("央"):
+        elif uni == ord(""):
             bits.add(20)  # Chinese: Traditional
-        elif uni == ord("곴"):
+        elif uni == ord(""):
             bits.add(21)  # Korean Johab
-        elif uni == ord("♥") and hasAscii:
+        elif uni == ord("") and hasAscii:
             bits.add(30)  # OEM Character Set
         # TODO: Symbol bit has a special meaning (check the spec), we need
         # to confirm if this is wanted by default.
@@ -729,7 +729,7 @@ def calcCodePageRanges(unicodes):
         #    codepageRanges.add(31)          # Symbol Character Set
         elif uni == ord("þ") and hasAscii and hasLineart:
             bits.add(54)  # MS-DOS Icelandic
-        elif uni == ord("╚") and hasAscii:
+        elif uni == ord("") and hasAscii:
             bits.add(62)  # WE/Latin 1
             bits.add(63)  # US
         elif hasAscii and hasLineart and ord("√") in unicodes:
